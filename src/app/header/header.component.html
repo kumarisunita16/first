@@ -1,0 +1,66 @@
+
+
+<style>
+    .nav1.show a:hover{
+      color: blue;
+    }
+   </style>
+  <div class="container-fluid" style="background-color: rgb(28, 90, 206);">
+    
+    <div class="row align-items-center py-3 ">
+        <div class="col-lg-3 d-none d-lg-block">
+            <a href="" class="text-decoration-none">
+                <h1 class="m-0 display-5 font-weight-semi-bold"  style="color: hwb(214 93% 1%);">first</h1>
+            </a>
+        </div>
+        
+        
+    </div>
+  </div>
+  <!-- Topbar End -->
+  <!-- Navbar Start -->
+  <div class="container-fluid mb-5 nav1">
+    <div class="row border-top ">
+        <div class="col pl-0 d-none d-lg-block">
+           
+            <nav class="collapse show navbar navbar-vertical  align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                    
+                    <a routerLink="/" class="nav-item  nav-link p-2" >Home</a>
+                    <a routerLink="/sellerauth" class="nav-item text-dark nav-link p-2">seller</a>
+                    <a routerLink="/executive_edge" class="nav-item text-dark nav-link p-2">login</a>
+                    <a routerLink="/big_lead" class="nav-item text-dark nav-link p-2">cart</a>
+                    <a routerLink="/fin_pro" class="nav-item text-dark nav-link p-2">Fin Pro</a>
+                    <a routerLink="/mind_spark" class="nav-item text-dark nav-link p-2">Mind Spark</a>
+                    <a routerLink="" class="nav-item text-dark nav-link p-2">Knowledge Stand</a>
+                    <a routerLink="" class="nav-item text-dark nav-link p-2">FAQS</a>
+                   <a href="" class="nav-item text-dark nav-link p-2">Setting</a>
+                   <a href="" class="nav-item text-dark nav-link p-2">Log Out</a>
+                    
+                </div>
+            </nav>
+        </div>
+        <div class="col-lg-9">
+          
+          <div id="header-carousel" class="carousel slide" data-ride="carousel">
+           
+            
+      
+            
+        </div>
+        <div class="col-lg-9">
+            
+            <div id="header-carousel" class="carousel slide" data-ride="carousel">
+             
+              <router-outlet></router-outlet>
+              
+          </div>
+            
+        </div>
+    </div>
+  </div>
+  
+  <!-- Navbar End -->
+  
+  
+  
