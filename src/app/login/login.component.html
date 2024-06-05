@@ -1,0 +1,70 @@
+<p>login works!</p>
+<body>
+    
+    <!-- <img style="height: 1000px; " src="../assets/images/bg1.jpg" class="d-block w-100" alt="..."> -->
+<div  class="signup" style="align-content: center;" *ngIf="!showlogin">
+<h1 >signup now</h1>
+<form class="form" role="form" #userdata="ngForm" (ngSubmit)="registerdata(userdata.value)">
+    <div class="form-floating">
+        <input type="text" ngModel name="name" id="name" class="form-control" placeholder="Name" required>
+        <label for="name">Name</label>
+    </div>
+
+    <div class="form-floating">
+        <input type="email" ngModel name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+            placeholder="Email address" required>
+
+        <label for="email">Email address</label>
+    </div>
+
+    <div class="form-floating my-4">
+        <input type="password" ngModel name="password" id="password" class="form-control" placeholder="Password" required>
+
+        <label for="password">Password</label>
+
+
+    </div>
+
+
+
+    <button type="submit" class="btn custom-btn form-control mt-4 mb-3">
+        Create account
+    </button>
+
+    <p class="text-center" (click)="openclick()">Already have an account? Please <a routerLink="login" >Sign In</a></p>
+
+</form>
+</div>
+
+
+<!-- login start -->
+<div class="login" *ngIf="showlogin">
+    <h1 >signin now</h1>
+<form  class="form"role="form"  #logindata="ngForm" (ngSubmit)="login(logindata.value)" >
+
+    <div class="form-floating">
+        <input type="email" ngModel name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+            placeholder="Email address" required>
+
+        <label for="email">Email address</label>
+    </div>
+
+    <div class="form-floating my-4">
+        <input type="password" ngModel name="password" id="password" class="form-control" placeholder="Password" required>
+
+        <label for="password">Password</label>
+
+
+    </div>
+
+
+
+    <button type="submit" class="btn custom-btn form-control mt-4 mb-3">
+        login now
+    </button>
+
+    <p class="text-center" (click)="opensignup()">New user<a routerLink="login">Signup</a></p>
+
+</form>
+</div>
+</body>

@@ -1,0 +1,72 @@
+
+body {
+    margin: 0px; padding:0px;
+    text-align:center;
+    display: flex;
+    width:100%;
+    height: 1000px;
+    justify-content: center;
+    /* background-image: url("../resister/bg1.jpg"); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+}
+.signup{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+height: 700px;
+width: 700px;
+
+
+
+
+
+}
+.signup h1{
+text-align: center;
+/* margin-left: -1500px;  */
+}
+.signup .form{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+height: 500px;
+width: 700px;
+padding: 10px;
+/* margin-left: -1000px; */
+
+
+}
+.signup .form  .form-floating{
+align-items: center;
+padding: 10px;
+width: 100%;
+}
+.login{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+height: 700px;
+width: 700px;
+margin-top: 0px;   
+
+}
+.login .form{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+height: 500px;
+width: 700px;
+padding: 10px;
+
+}
+.login .form  .form-floating{
+align-items: center;
+ padding: 10px;
+ width: 100%;
+}
